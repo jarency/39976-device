@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Nikolay Lebedev](https://up.htmlacademy.ru/htmlcss/17/user/39976).
-* Наставник: [Альбина Токарчук](https://s.mail.ru/AqHP/PFpoCTdKq).
+* Наставник: [Альбина Токарчук](https://htmlacademy.ru/profile/id167491).
 
 ---
 
