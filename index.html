@@ -3,10 +3,259 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- 1. Шапка проекта -->
+    <header>
+      <p class="header-logo">Device</p>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+      <nav class="header-submenu">
+        <!-- Не доделан поиск -->
+        <form class="">
+          <input>
+        </form>
 
+        <div class="header-submenu-auth"><a href="#">Войти</a></div>
+        <div class="header-submenu-compare"><a href="#">Сравнить</a></div>
+        <div class="header-submenu-basket"><a href="#">Корзина</a></div>
+
+      </nav>
+
+      <nav class="mainmenu">
+        <div class="mainmenu-catalog"><a href="#">Каталог товаров</a></div>
+        <div class="mainmenu-delivery"><a href="#">Доставка</a></div>
+        <div class="mainmenu-garanty"><a href="#">Гарантия</a></div>
+        <div class="mainmenu-contacts"><a href="#">Контакты</a></div>
+      </nav>
+
+    </header>
+
+
+    <main>
+      <!-- 2. Слайдер -->
+      <section class="slider">
+        <ul class="slider-items">
+          <li class="slider-item">
+
+            <!-- Заголовок, текст, большая цифра, кнопка-->
+            <img src="img/slider-1.png" width="384" height="486" class="slider-item-img">
+            <div class="slider-item-txt">
+              <h1>
+                Делай селфи, <br>
+                как Бен Стиллер!
+              </h1>
+              <div class="slider-bigfigure">01</div>
+              <p>
+                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+            </div>
+
+            <div class="btn">
+              <a href="#">Подробнее</a>
+            </div>
+
+            <!-- Тех.характеристики-->
+            <ul class="slider-item-descr">
+              <li class="slider-item-descr-1">
+                8,5 м<br>
+                <span>Длина палки</span>
+              </li>
+              <li class="slider-item-descr-2">
+                5 кг<br>
+                <span>Вес палки</span>
+              </li>
+              <li class="slider-item-descr-13">
+                Карбон<br>
+                <span>Материал</span>
+              </li>
+            </ul>
+
+          </li>
+        </ul>
+
+        <!-- Пагинатор слайдера-->
+        <ul class="slider-pagination">
+          <li><a href="#1">1</a></li>
+          <li><a href="#2">2</a></li>
+          <li><a href="#3">3</a></li>
+        </ul>
+
+      </section>
+
+      <!-- 3. Меню каталога -->
+      <section class="catalogmenu">
+        <ul class="catalogmenu-items">
+          <!-- НУЖЕН КОД: добавить ссылки + картинки для каждого пункта
+          или вставить картинку в css  через номерной список лишек thd:1?
+        как расставить ссылки у лишек, чтобы на блок?-->
+          <li class="catalogmenu-item">
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li class="catalogmenu-item">
+            <a href="#">Моноподы<br>для селфи</a>
+          </li>
+          <li class="catalogmenu-item">
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li class="catalogmenu-item">
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="catalogmenu-item">
+            <a href="#">Умные часы</a>
+          </li>
+          <li class="catalogmenu-item">
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. Инфоблок -->
+      <section class="infoblock">
+        <div class="infoblock-menu">
+          <ul class="infoblock-menu-items">
+            <li class="infoblock-menu-delivery">
+              <a href="#delivery">Доставка</a>
+            </li>
+            <li class="infoblock-menu-garanty">
+              <a href="#garanty">Гарантия</a>
+            </li>
+            <li class="infoblock-menu-credit">
+              <a href="#credit">Кредит</a>
+            </li>
+          </ul>
+        </div>
+        <div class="infoblock-spacer"></div>
+        <div class="infoblock-txt">
+          <ul class="infoblock-txt-items">
+            <li class="infoblock-txt-delivery">
+              <h2>Доставка</h2>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+              <img src="img/delivery.png"  width="136" height="164">
+            </li>
+            <li class="infoblock-txt-garanty">
+              <h2>Гарантия</h2>
+              <p>
+                Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+              </p>
+              <img src="img/warranty.png" width="171" height="195">
+            </li>
+            <li class="infoblock-txt-credit">
+              <h2>Кредит</h2>
+              <p>
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+              <img src="img/credit.png" width="156" height="188">
+            </li>
+          </ul>
+        </div>
+        <div>
+      </section>
+
+      <!-- 5. Партнеры: Нужно ли делать ч/б или достаточно только цветных? -->
+      <section class="partners">
+        <ul class="partners-items">
+          <li class=partners-item><a href=""><img src="img/logo-1.png"></a></li>
+          <li class=partners-item><a href=""><img src="img/logo-2.png"></a></li>
+          <li class=partners-item><a href=""><img src="img/logo-3.png"></a></li>
+          <li class=partners-item><a href=""><img src="img/logo-4.png"></a></li>
+        </ul>
+      </section>
+
+      <!-- 6. О нас -->
+      <section class="about">
+        <h2>О нас</h2>
+        <p class="about">
+          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        </p>
+        <p class="about">
+          Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul class="about-items">
+          <li class="about-item">Деловые Линии</li>
+          <li class="about-item">Автотрейдинг</li>
+          <li class="about-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <div class="btn">
+          <a href="#">Подробнее о нас</a>
+        </div>
+      </section>
+
+      <!-- 7. Контакты -->
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p class="contacts">
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <img src="img/map.jpg" class="contacts-map">
+        <div class="btn">
+          <a href="#">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- 8. Футер -->
+    <footer>
+
+      <div class="footer-firstline">
+        <p class="footer-logo">Device</p>
+        <nav class="footer-submenu">
+
+          <div class="footer-submenu-auth">
+            <a href="#">Войти</a>
+          </div>
+
+          <div class="footer-submenu-compare">
+            <a href="#">Сравнить</a>
+          </div>
+
+          <div class="footer-submenu-basket">
+            <a href="#">Корзина</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-secondline">
+        <div class="footer-adress">
+          г. Москва, ул. Строителей, 15
+        </div>
+
+        <nav class="footer-submenu">
+          <ul class="footer-submenu-items">
+            <li class="footer-submenu-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer-submenu-item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="footer-submenu-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-phone">
+          Тел.: +7 (495) 495-95-95
+        </div>
+      </div>
+
+      <div class="footer-thirdline">
+        <div class="footer-yellowline"></div>
+
+        <section class="footer-socials">
+          <a href="#" class="social-vk"><img src="img/vk.png" width="26" height="16" alt="Вконтакте"></a>
+          <a href="#" class="social-fb"><img src="img/fb.png" width="12" height="22" alt="Facebook"></a>
+          <a href="#" class="social-insta"><img src="img/insta.png" width="21" height="21" alt="Instagram"></a>
+        </section>
+
+        <div class="footer-madeby">
+          <a href="http://htmlacademy.ru"><img src="img/htmlacademy.svg"></a>
+        </div>
+      </div>
+
+    </footer>
   </body>
 </html>
